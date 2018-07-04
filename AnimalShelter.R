@@ -1,6 +1,9 @@
+###############################################################################
+#~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ Ingesting & Preprocessing Datasets ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+###############################################################################
 rm(list=ls(all=TRUE))
-#Set the directory 
-setwd("D:\\My Files\\Animalsshelter")
+getwd() #Current working directory
+setwd("D:\\My Files\\Animalsshelter") #Set working directory to where your data files are stored
 
 #Import the data and read the file.
 traindata<-read.csv(file = "train.csv", header = TRUE,na.strings=c(""))
@@ -371,7 +374,9 @@ testdata$time = as.factor(testdata$time)
 
 str(testdata)
 
-
+#############################################################
+#---------------------- Modeling ---------------------------#
+#############################################################
 
 #Split the data into train and test.
 library(caret)

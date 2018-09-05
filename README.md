@@ -9,4 +9,4 @@ logloss=−1N∑i=1N∑j=1Myijlog(pij),
 
 where N is the number of animals in the test set, M is the number of outcomes, log is the natural logarithm, yij is 1 if observation i is in outcome j and 0 otherwise, and pij is the predicted probability that observation i belongs to outcome j.
 
-In this repository I've provided my approach towards the problem and how I've predicted the outcomes of various animals in the shelter.
+In this repository, I've provided my approach towards the problem and how I've predicted the outcomes of various animals in the shelter.

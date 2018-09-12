@@ -2,8 +2,10 @@
 #~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ Ingesting & Preprocessing Datasets ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 ###############################################################################
 rm(list=ls(all=TRUE))
-getwd() #Current working directory
-setwd("D:\\My Files\\Animalsshelter") #Set working directory to where your data files are stored
+#Current working directory
+getwd()
+#Set working directory to where your data files are stored
+setwd("D:\\My Files\\Animalsshelter") 
 
 #Import the data and read the file.
 traindata<-read.csv(file = "train.csv", header = TRUE,na.strings=c(""))
